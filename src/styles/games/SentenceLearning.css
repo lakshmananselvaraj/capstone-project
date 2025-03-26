@@ -1,0 +1,130 @@
+.sentence-learning-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.explore-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.explore-btn:hover {
+  opacity: 0.8;
+}
+
+.tamil-btn {
+  background-color: #ff9800;
+  color: white;
+}
+
+.english-btn {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.story-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.story-container {
+  width: 300px;
+  height: 420px; /* Ensuring all containers have the same height */
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.story-container:hover {
+  background-color: #ececec;
+}
+
+.story-image {
+  width: 100%;
+  height: 180px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensuring images fit properly */
+  border-radius: 8px;
+}
+
+.story-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.story-description {
+  font-size: 14px;
+  color: #333;
+  flex-grow: 1;
+}
+
+.button-group-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.story-btn,
+.video-btn {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.story-btn {
+  background-color: #4caf50;
+}
+
+.story-btn:hover {
+  background-color: #388e3c;
+}
+
+.video-btn {
+  background-color: #2196f3;
+}
+
+.video-btn:hover {
+  background-color: #1976d2;
+}
+
+.back-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #d32f2f;
+}

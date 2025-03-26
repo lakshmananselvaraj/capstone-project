@@ -1,0 +1,96 @@
+.maze-game {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #ffd700;
+}
+
+.maze-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  border: 3px solid #fff;
+  padding: 10px;
+  background-color: #444;
+}
+
+.maze-row {
+  display: flex;
+}
+
+.maze-cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 2px solid #fff;
+  background-color: #eee;
+}
+
+.wall {
+  background-color: #333;
+  color: white;
+  border-color: black;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.controls div {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button[disabled] {
+  background-color: #555;
+  cursor: not-allowed;
+}
+

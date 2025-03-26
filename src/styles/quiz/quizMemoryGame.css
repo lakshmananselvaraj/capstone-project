@@ -1,0 +1,51 @@
+.game-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .card {
+    width: 100px;
+    height: 100px;
+    background: #16213e;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card.flipped {
+    background: #ffcc00;
+    transform: rotateY(180deg);
+    color: #16213e;
+    font-weight: bold;
+  }
+  
+  .win-message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #28a745;
+  }
+  

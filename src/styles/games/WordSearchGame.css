@@ -1,0 +1,67 @@
+.word-search-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .word-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .grid-cell {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .grid-cell:hover {
+    background: #0056b3;
+  }
+  
+  .selection {
+    margin-top: 20px;
+  }
+  
+  .check-btn, .next-btn, .back-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .check-btn {
+    background: #28a745;
+    color: white;
+  }
+  
+  .next-btn {
+    background: #ff9800;
+    color: white;
+  }
+  
+  .back-btn {
+    background: #dc3545;
+    color: white;
+  }
+  
+  .message {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  

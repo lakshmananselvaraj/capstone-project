@@ -1,0 +1,128 @@
+.quiz-game-container {
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .level-selection h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 12px 18px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  button:nth-child(1) {
+    background-color: #ffcc00;
+  }
+  
+  button:nth-child(2) {
+    background-color: #ff6666;
+  }
+  
+  button:nth-child(3) {
+    background-color: #66ccff;
+  }
+  
+  button:nth-child(1):hover {
+    background-color: #ffdb4d;
+  }
+  
+  button:nth-child(2):hover {
+    background-color: #ff8080;
+  }
+  
+  button:nth-child(3):hover {
+    background-color: #80d0ff;
+  }
+  
+  .question-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h4 {
+    font-size: 18px;
+    color: #444;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .options button {
+    width: 80%;
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .options button:hover {
+    background-color: #66bb6a;
+  }
+  
+  .result-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffeb3b;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .result-section h3 {
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .result-section p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .result-section button {
+    background-color: #ff5722;
+    color: white;
+  }
+  
+  .result-section button:hover {
+    background-color: #ff7043;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .quiz-game-container {
+      width: 95%;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  

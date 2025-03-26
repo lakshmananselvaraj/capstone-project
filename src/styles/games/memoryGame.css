@@ -1,0 +1,151 @@
+/* General Styles */
+.memory-game {
+  text-align: center;
+  font-family: "Poppins", Arial, sans-serif;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Title & Moves */
+h1 {
+  font-size: 28px;
+  color: #ffcc00;
+  text-shadow: 0 0 5px #ff6600;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+/* Restart Button */
+.restart-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ff758c, #ff3d67);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+  margin-bottom: 15px;
+}
+
+.restart-btn:hover {
+  background: linear-gradient(135deg, #ff3d67, #ff758c);
+  transform: scale(1.1);
+}
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Card Styling */
+.card {
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+/* Flip Card Animation */
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Card Faces */
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Front (with icon) */
+.card-front {
+  background-color: #27ae60;
+  color: white;
+  transform: rotateY(180deg);
+  border: 2px solid #2ecc71;
+}
+
+/* Back (Hidden Side) */
+.card-back {
+  background-color: #34495e;
+  border: 2px solid #ecf0f1;
+}
+
+/* Responsive Grid */
+@media (max-width: 500px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 80px);
+  }
+
+  .card {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card-front,
+  .card-back {
+    font-size: 30px;
+  }
+}
+/* Result Message */
+.result-message {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #27ae60;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px rgba(39, 174, 96, 0.8);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.result-message h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

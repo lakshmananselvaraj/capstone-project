@@ -1,0 +1,142 @@
+.puzzle-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #f4f4f4, #e0e0e0);
+  min-height: 100vh;
+}
+
+/* Instructions Section */
+.instructions {
+  background: #fff3cd;
+  padding: 12px;
+  border-radius: 12px;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Game Layout: Example (Left) + Game (Right) */
+.game-layout {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 90%;
+  gap: 20px;
+}
+
+/* Example Output Box */
+.example-output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  background: #e3f2fd;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Game Board */
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Puzzle Board Grid */
+.puzzle-board {
+  display: grid;
+  gap: 8px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  border: 2px solid #90caf9;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Grid Sizes */
+.puzzle-board[data-size="3"] { grid-template-columns: repeat(3, 65px); }
+.puzzle-board[data-size="4"] { grid-template-columns: repeat(4, 55px); }
+.puzzle-board[data-size="5"] { grid-template-columns: repeat(5, 50px); }
+.puzzle-board[data-size="6"] { grid-template-columns: repeat(6, 45px); }
+.puzzle-board[data-size="7"] { grid-template-columns: repeat(7, 40px); }
+.puzzle-board[data-size="8"] { grid-template-columns: repeat(8, 35px); }
+.puzzle-board[data-size="9"] { grid-template-columns: repeat(9, 30px); }
+
+/* Tiles */
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: #ffeb3b;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #f57c00;
+  transition: transform 0.2s ease-in-out, background 0.3s ease;
+}
+
+.tile:hover {
+  background: #ffca28;
+  transform: scale(1.05);
+}
+
+.tile:active {
+  transform: scale(0.95);
+}
+
+/* Empty Tile */
+.tile.empty {
+  background: transparent;
+  border: 2px dashed #607d8b;
+  box-shadow: none;
+}
+
+/* Congratulations Message */
+.congrats-message {
+  margin-top: 15px;
+  padding: 12px;
+  background: #4caf50;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Score Display */
+.score {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d32f2f;
+  margin-top: 10px;
+}
+
+/* Buttons */
+button {
+  margin-top: 12px;
+  padding: 12px 18px;
+  background: #ff9800;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #e68900;
+}

@@ -1,0 +1,92 @@
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #1a1a2e, #16213e); /* Gradient background */
+  color: white;
+  padding: 12px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Container */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Logo Image Styling (Circular & Reduced Size) */
+.logo img {
+  width: 40px; /* Reduced size */
+  height: 40px; /* Keep it circular */
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image looks good inside the circle */
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* Logo Text Styling */
+.logo a {
+  color: #ffcc00;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.logo a:hover {
+  color: #ffd700;
+  text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8);
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  background: #ffcc00;
+  color: #1a1a2e;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 10px;
+  }
+
+  .logo img {
+    width: 35px; /* Slightly smaller logo for mobile */
+    height: 35px;
+  }
+}

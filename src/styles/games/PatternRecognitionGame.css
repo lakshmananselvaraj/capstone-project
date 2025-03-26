@@ -1,0 +1,52 @@
+.game-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .game-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .level-info, .score-display {
+    margin: 10px 0;
+  }
+  
+  .pattern-box {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .pattern-item {
+    font-size: 32px;
+    margin: 5px;
+  }
+  
+  .missing {
+    background-color: yellow;
+  }
+  
+  .options-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .option-btn {
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .back-btn, .restart-btn {
+    font-size: 18px;
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  

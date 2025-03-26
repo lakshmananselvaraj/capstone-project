@@ -1,0 +1,119 @@
+/* General Container */
+.learning-container {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    background: linear-gradient(to right, #f7f8fa, #e6e9ef);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #222;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Learning Sections */
+  .learning-section {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    animation: slideUp 0.8s ease-in-out;
+    text-align: center;
+  }
+  
+  /* ABCD Learning */
+  .store-learning {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #222;
+  }
+  
+  /* Sentence-Based Learning */
+  .story-learning {
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    color: #222;
+  }
+  
+  /* Hover Effects */
+  .learning-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Explore Buttons */
+  .explore-btn {
+    background: #222;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  .explore-btn:hover {
+    background: #ff6b6b;
+    box-shadow: 0 4px 10px rgba(255, 107, 107, 0.4);
+  }
+  
+  /* Sentence Learning Buttons */
+  .button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .tamil-btn {
+    background: #ff9800;
+  }
+  .english-btn {
+    background: #03a9f4;
+  }
+  .tamil-btn:hover {
+    background: #e68900;
+  }
+  .english-btn:hover {
+    background: #0288d1;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .learning-section {
+      width: 90%;
+    }
+  }
+  
